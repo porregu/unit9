@@ -4,5 +4,16 @@ class Card:
         self.rank = rank
         self.suit = suit
 
+
+    def __gt__(self, other):
+        if self.rank > other.rank:
+            return True
+        elif other.rank > self.rank:
+            return False
+        #else:
+
+
+
     def __str__(self):
-        return str(self.rank) + " of " + self.suit
+        values = ["Ace", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "jack", "queen", "king"]
+        return  values[self.rank-1]+ " of " + self.suit
