@@ -3,12 +3,7 @@ class Dog:
     def __init__(self, dogs_name):
         self.dogs_name = dogs_name
         self.trick_list = []
-        if self.trick_list == 0:
-            "the dog didnt realize any trick"
-        elif self.trick_list == 1:
-            "the dog realize this tricks "
-        for x in self.trick_list:
-            self.trick_list.append(self.trick_list)
+
 
 
     def get_name(self):
@@ -29,3 +24,10 @@ class Dog:
         print(self.dogs_name + " rolls")
         self.trick_list.append("roll")
 
+    def print_trick_list(self):
+        if len(self.trick_list) == 0:
+            print("the dog didnt realize any trick")
+        else:
+            print("the dog realize this tricks ")
+            for x in self.trick_list:
+                print(x)
