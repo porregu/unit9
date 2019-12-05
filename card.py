@@ -6,11 +6,19 @@ class Card:
 
 
     def __gt__(self, other):
-        if self.rank > other.rank:
+        rank1 = ["Ace", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "jack", "queen", "king"]
+        if self.rank1 > other.rank1:
             return True
-        elif other.rank > self.rank:
+        elif other.rank1 > self.rank1:
             return False
-        #else:
+        else:
+            suit1 = [ "clubs","diamond", "hearts", "spades" ]
+            suit2 = self.index(self.suit1)
+            suit3 = self.index(other.suit1)
+            if self.suit > other.suit:
+                return True
+            else:
+                return False
 
 
 

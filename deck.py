@@ -5,7 +5,7 @@ class Deck:
 
     def __init__(self):
         self.cards = []
-        for suit in ["hearts", "clubs", "spades", "diamond"]:
+        for suit in [ "clubs","diamond", "hearts", "spades" ]:
             for rank in range (1,14):
                 new_card = Card(rank, suit)
                 self.cards.append(new_card)
